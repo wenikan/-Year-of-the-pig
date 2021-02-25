@@ -1,0 +1,537 @@
+<html lang="zh-TW">
+     <title>牛逼肥宅賀年網</title>
+<head>
+    <link rel="shortcut icon" href="img/logo.ico">
+    
+    <script src="_js/jquery.min.js"></script>
+    <scipt src="_js/jquery-ui.min.js"></scipt>
+    <script src="_js/jQueryRotate.2.2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+
+ <style>
+     html 
+          {
+            height: 100%;
+            background-image: url(img/網站底色.png)
+        }
+     .test
+     {
+         text-align: center;
+         padding-top: 45px
+     }
+      .ooo
+     {
+         top: 300px;
+         left: 750px;
+         width: 50px;
+         height: 50px;
+         position: absolute;
+     }
+      .xxx
+     {
+         top: 300px;
+         left: 750px;
+         width: 50px;
+         height: 50px;
+         position: absolute;
+     }
+     .ooo1
+     {
+         top: 240px;
+         left: 840px;
+         width: 50px;
+         height: 50px;
+         position: absolute;
+     }
+     #Score
+     {
+         top: 50px;
+         left: 50px;
+         text-align: center;
+         position: absolute;
+     }
+     #score1
+     {      
+         width: 280px;
+         height: 150px;
+         position: absolute;
+     }
+     #score2
+     {
+         top: 35px;
+         left: 130px;
+         font-size: 50px;
+         text-align: center;
+         position: absolute;
+     }
+    </style>
+<style>
+      #figure 
+    {
+     /*position: relative;*/
+      width: 300px;
+      height: 400px;
+      overflow: visible;
+      /*margin: 0px auto;*/
+      position: absolute;
+      top: 40%;
+      left: 45%;
+      margin: -200px 0 0 -150px;
+    }
+    #leveldescription 
+    {
+        position: absolute;	
+        left:0px;
+        width: 450px;
+        height: 533px;  
+    }
+    #caption 
+    {
+        cursor: pointer;
+        position:absolute;
+        width:auto;
+        top: 105%;
+        left: 58%;
+        width: 100px;
+        height: 60px;
+        padding:5px 10px;
+        /*display: none;*/
+        text-align: center;
+        letter-spacing:1px;
+    }
+
+    </style>
+        
+<script>
+$(document).ready(function() {
+        start();
+        $('.answer img').css( 'cursor', 'pointer' );
+        
+///////////////////////// 
+    $('.ooo').hide();
+     $('.xxx').hide();
+    $('.ooo1').hide();
+    $('.Question1').hide();
+    $('.Question2').hide();
+    $('.Question3').hide();
+    $('.Question4').hide();
+    $('.Question5').hide();
+    /////////////////////////
+        
+         
+           
+});
+    
+/*$(".correct").click(function() {
+$(this).css({"background-color": "brown"});
+});*/
+
+</script>
+
+<script>
+    function clickhover(){
+        $(".answer #a11").hover(
+            function (){
+                $(this).attr('src','img/Q1A1-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q1A1-1.png');
+            }
+            );
+        $(".answer #a12").hover(
+            function (){
+                $(this).attr('src','img/Q1A2-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q1A2-1.png');
+            }
+            );
+     $(".answer #a13").hover(
+            function (){
+                $(this).attr('src','img/Q1A3-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q1A3-1.png');
+            }
+            );
+     $(".answer #a14").hover(
+            function (){
+                $(this).attr('src','img/Q1A4-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q1A4-1.png');
+            });
+         /////////////////////////////////////
+          $(".answer #a21").hover(
+            function (){
+                $(this).attr('src','img/Q2A1-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q2A1-1.png');
+            }
+            );
+        $(".answer #a22").hover(
+            function (){
+                $(this).attr('src','img/Q2A2-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q2A2-1.png');
+            }
+            );
+     $(".answer #a23").hover(
+            function (){
+                $(this).attr('src','img/Q2A3-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q2A3-1.png');
+            }
+            );
+     $(".answer #a24").hover(
+            function (){
+                $(this).attr('src','img/Q2A4-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q2A4-1.png');
+            }
+            );
+    /////////////////////////////////////
+          $(".answer #a31").hover(
+            function (){
+                $(this).attr('src','img/Q3A1-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q3A1-1.png');
+            }
+            );
+        $(".answer #a32").hover(
+            function (){
+                $(this).attr('src','img/Q3A2-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q3A2-1.png');
+            }
+            );
+     $(".answer #a33").hover(
+            function (){
+                $(this).attr('src','img/Q3A3-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q3A3-1.png');
+            }
+            );
+     $(".answer #a34").hover(
+            function (){
+                $(this).attr('src','img/Q3A4-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q3A4-1.png');
+            }
+            );
+/////////////////////////
+    /////////////////////////////////////
+          $(".answer #a41").hover(
+            function (){
+                $(this).attr('src','img/Q4A1-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q4A1-1.png');
+            }
+            );
+        $(".answer #a42").hover(
+            function (){
+                $(this).attr('src','img/Q4A2-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q4A2-1.png');
+            }
+            );
+     $(".answer #a43").hover(
+            function (){
+                $(this).attr('src','img/Q4A3-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q4A3-1.png');
+            }
+            );
+     $(".answer #a44").hover(
+            function (){
+                $(this).attr('src','img/Q4A4-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q4A4-1.png');
+            }
+            );
+/////////////////////////
+    /////////////////////////////////////
+          $(".answer #a51").hover(
+            function (){
+                $(this).attr('src','img/Q5A1-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q5A1-1.png');
+            }
+            );
+        $(".answer #a52").hover(
+            function (){
+                $(this).attr('src','img/Q5A2-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q5A2-1.png');
+            }
+            );
+     $(".answer #a53").hover(
+            function (){
+                $(this).attr('src','img/Q5A3-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q5A3-1.png');
+            }
+            );
+     $(".answer #a54").hover(
+            function (){
+                $(this).attr('src','img/Q5A4-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q3A4-1.png');
+            }
+            );
+    }
+
+</script>
+    
+<script>
+    function click(){
+        var score = 50;
+         var i=1;
+        $(".answer [data]").click(      
+            function(){
+              if( $(this).attr('data')==10)
+                  {
+                      $('.ooo').show().animate(
+                    {
+                        top: '100px',
+                        left: '500px',
+                        width: '550px', 
+                        height: '550px',
+
+                    },
+                    2000,
+                    'easeOutElastic'
+                    );
+                    score += 10;
+                     $('#score2').text(score);
+                    $('.ooo').delay(800).fadeOut(100);
+                      if(i==1)Q1s();
+                      if(i==2)Q2s();
+                      if(i==3)Q3s();
+                      if(i==4)Q4s();
+                      if(i==5)Q5s()
+                  }
+                else
+                  {
+                      $('.xxx').show().animate(
+                        {
+                            top: '100px',
+                            left: '500px',
+                            width: '550px', 
+                            height: '550px',
+                        },2000,'easeOutElastic').fadeOut(800);
+                      $('.ooo1').delay(2800).fadeIn(800);
+                      $('.ooo1').delay(1200).fadeOut(100);
+                      //$('.Question1').delay(5000).hide(100);
+                      if(i==1)Q1s();
+                      if(i==2)Q2s();
+                      if(i==3)Q3s();
+                      if(i==4)Q4s();
+                      if(i>=5)Q5s();
+                  };
+                i+=1;
+         });
+    }
+    
+</script>
+    
+<script>
+        function Q1s(){
+        $('.Question1').delay(5000).hide(100);
+        if($('.Question1').hide(100)){
+             $('.Question2').delay(6000).slideDown(800);
+        };}
+        function Q2s(){
+        $('.Question2').delay(5000).hide(100);
+        if($('.Question2').hide(100)){
+             $('.Question3').delay(6000).slideDown(800);
+        };}
+        function Q3s(){
+        $('.Question3').delay(5000).hide(100);
+        if($('.Question3').hide(100)){
+             $('.Question4').delay(6000).slideDown(800);
+        };}
+        function Q4s(){
+        $('.Question4').delay(5000).hide(100);
+        if($('.Question4').hide(100)){
+             $('.Question5').delay(6000).slideDown(800);
+        };}
+        function Q5s(){
+        $('.Question5').delay(5000).hide(100);
+        if($('.Question5').hide(100)){
+             //$('.Question4').delay(6000).slideDown(800);
+        };}
+    
+</script>
+<script>
+
+    function start(){
+
+            $("#figure").hide();
+            $("#figure").slideToggle(500)
+            $("#caption").click(function(){
+                $('.Question1').delay(1000).slideDown(800);
+                clickhover();
+                click();
+                $("#figure").fadeOut(1000);
+        })
+    };
+
+</script>
+    
+</head>
+    <body>
+        <div class="test">
+<div class="Question1">
+    <div class="Question">
+        <img src="img/Q1.png" width="400" height="180"  >
+    </div>
+     <!------------------------------------->        
+            <div class="answer">
+                <img src="img/Q1A1-1.png" width="200" height="60"  id="a11" data="10">
+            </div>
+           <!------------------------------------->
+           <div class="answer">
+                <img src="img/Q1A2-1.png" width="200" height="60"  id="a12" data="0">
+            </div>
+             <!------------------------------------->
+            <div class="answer">
+                <img src="img/Q1A3-1.png" width="200" height="60"  id="a13" data="0">
+            </div>
+             <!------------------------------------->
+            <div class="answer">
+                <img src="img/Q1A4-1.png" width="200" height="60"  id="a14" data="0">
+            </div>
+ 
+</div>
+ <!---------------Q2------------>
+<div class="Question2">
+    <div class="Question">
+        <img src="img/Q2.png" width="400" height="180">
+    </div>
+     <!------------------------------------->        
+            <div class="answer">
+                <img src="img/Q2A1-1.png" width="200" height="60"  id="a21" data="0">
+            </div>
+           <!------------------------------------->
+           <div class="answer">
+                <img src="img/Q2A2-1.png" width="200" height="60"  id="a22" data="10">
+            </div>
+             <!------------------------------------->
+            <div class="answer">
+                <img src="img/Q2A3-1.png" width="200" height="60"  id="a23" data="0">
+            </div>
+             <!------------------------------------->
+            <div class="answer">
+                <img src="img/Q2A4-1.png" width="200" height="60"  id="a24" data="0">
+            </div>
+ 
+</div> 
+<!---------------Q3------------>
+<div class="Question3">
+    <div class="Question">
+        <img src="img/Q3.png" width="400" height="180">
+    </div>
+     <!------------------------------------->        
+            <div class="answer">
+                <img src="img/Q3A1-1.png" width="200" height="60"  id="a31" data="0">
+            </div>
+           <!------------------------------------->
+           <div class="answer">
+                <img src="img/Q3A2-1.png" width="200" height="60"  id="a32" data="0">
+            </div>
+             <!------------------------------------->
+            <div class="answer">
+                <img src="img/Q3A3-1.png" width="200" height="60"  id="a33" data="0">
+            </div>
+             <!------------------------------------->
+            <div class="answer">
+                <img src="img/Q3A4-1.png" width="200" height="60"  id="a34" data="10">
+            </div>
+ 
+</div>
+<!---------------Q4------------>
+<div class="Question4">
+    <div class="Question">
+        <img src="img/Q4.png" width="400" height="180">
+    </div>
+     <!------------------------------------->        
+            <div class="answer">
+                <img src="img/Q4A1-1.png" width="200" height="60"  id="a41" data="0">
+            </div>
+           <!------------------------------------->
+           <div class="answer">
+                <img src="img/Q4A2-1.png" width="200" height="60"  id="a42" data="0">
+            </div>
+             <!------------------------------------->
+            <div class="answer">
+                <img src="img/Q4A3-1.png" width="200" height="60"  id="a43" data="10">
+            </div>
+             <!------------------------------------->
+            <div class="answer">
+                <img src="img/Q4A4-1.png" width="200" height="60"  id="a44" data="0">
+            </div>
+ 
+</div>   
+<!---------------Q5------------>
+<div class="Question5">
+    <div class="Question">
+        <img src="img/Q5.png" width="400" height="180">
+    </div>
+     <!------------------------------------->        
+            <div class="answer">
+                <img src="img/Q5A1-1.png" width="200" height="60"  id="a51" data="0">
+            </div>
+           <!------------------------------------->
+           <div class="answer">
+                <img src="img/Q5A2-1.png" width="200" height="60"  id="a52" data="10">
+            </div>
+             <!------------------------------------->
+            <div class="answer">
+                <img src="img/Q5A3-1.png" width="200" height="60"  id="a53" data="0">
+            </div>
+             <!------------------------------------->
+            <div class="answer">
+                <img src="img/Q5A4-1.png" width="200" height="60"  id="a54" data="0">
+            </div>
+ 
+</div>
+ <!--------------------------->
+             <div class="answer">
+            <img class="ooo" src="img/圈.png"/>
+            </div>
+            <div class="answer">
+            <img class="xxx" src="img/叉.png"/>
+            </div>
+            <div class="answer">
+            <img class="ooo1" src="img/circle.png"/>
+            </div>
+            <div id="Score">
+                <img id="score1" src="img/分數.png"/>
+                <h2 id="score2">50</h2>
+            </div>
+            <div id="figure">
+                <img src="img/第二關介紹.png" width="500" height="300" id="leveldescription">
+                <img id="caption" src="img/ok.png"/>
+            </div>
+</div>
+</body>
+</html>

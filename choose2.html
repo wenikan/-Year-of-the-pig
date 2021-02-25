@@ -1,0 +1,1123 @@
+<html lang="zh-TW">
+     <title>豬不豬道</title>
+<head>
+    <link rel="shortcut icon" href="img/logo.ico">
+    
+    <script src="_js/jquery.min.js"></script>
+    <scipt src="_js/jquery-ui.min.js"></scipt>
+    <script src="_js/jQueryRotate.2.2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+
+ <style>
+     html 
+          {
+            height: 100%;
+            background-image: url(img/網站底色.png)
+        }
+     body
+        {
+            font-family: "Microsoft JhengHei";  
+           
+        }
+     .test
+     {
+         text-align: center;
+         padding-top: 45px
+     }
+     .Question
+     {
+         top: 50px;
+         left: 570px;
+         width: 50px;
+         height: 50px;
+         position: absolute;
+     }
+     #a1
+     {
+         top: 230px;
+         left: 665px;
+         width: 50px;
+         height: 50px;
+         position: absolute;
+     }
+     #a2
+     {
+         top: 300px;
+         left: 665px;
+         width: 50px;
+         height: 50px;
+         position: absolute;
+     }
+     #a3
+     {
+         top: 370px;
+         left: 665px;
+         width: 50px;
+         height: 50px;
+         position: absolute;
+     }
+     #a4
+     {
+         top: 440px;
+         left: 665px;
+         width: 50px;
+         height: 50px;
+         position: absolute;
+     }
+      .ooo
+     {
+         top: 300px;
+         left: 750px;
+         width: 50px;
+         height: 50px;
+         position: absolute;
+     }
+      .xxx
+     {
+         top: 300px;
+         left: 750px;
+         width: 50px;
+         height: 50px;
+         position: absolute;
+     }
+     .ooo1
+     {
+         /*
+         top: 240px;
+         left: 840px;
+         */
+         width: 50px;
+         height: 50px;
+         position: absolute;
+     }
+     #Score
+     {
+         top: 50px;
+         left: 50px;
+         text-align: center;
+         position: absolute;
+     }
+     #score1
+     {      
+         width: 280px;
+         height: 150px;
+         position: absolute;
+     }
+     #score2
+     {
+         top: 25px;
+         left: 113px;
+         font-size: 50px;
+         text-align: center;
+         position: absolute;
+     }
+     
+     .pigface
+     {
+         top: 520px;
+         left: 680px;
+         position: absolute;
+     }
+     #pigface1
+     {
+         width: 180px;
+         height: 150px;
+         position: absolute;
+         z-index: -1;
+     }
+    </style>
+<style>
+      #figure 
+    {
+     /*position: relative;*/
+      width: 300px;
+      height: 400px;
+      overflow: visible;
+      /*margin: 0px auto;*/
+      position: absolute;
+      top: 40%;
+      left: 45%;
+      margin: -200px 0 0 -150px;
+    }
+    #leveldescription 
+    {
+        position: absolute;	
+        left:0px;
+        width: 450px;
+        height: 533px;  
+    }
+    #caption 
+    {
+        cursor: pointer;
+        position:absolute;
+        width:auto;
+        top: 105%;
+        left: 58%;
+        width: 100px;
+        height: 60px;
+        padding:5px 10px;
+        /*display: none;*/
+        text-align: center;
+        letter-spacing:1px;
+    }
+    #figure1 
+    {
+     /*position: relative;*/
+      width: 300px;
+      height: 400px;
+      overflow: visible;
+      /*margin: 0px auto;*/
+      position: absolute;
+      top: 40%;
+      left: 45%;
+      margin: -200px 0 0 -150px;
+    }
+    #leveldescription1
+    {
+        position: absolute;	
+        left:0px;
+        width: 450px;
+        height: 533px;  
+    }
+    #caption1 
+    {
+        cursor: pointer;
+        position:absolute;
+        width:auto;
+        top: 105%;
+        left: 58%;
+        width: 100px;
+        height: 60px;
+        padding:5px 10px;
+        /*display: none;*/
+        text-align: center;
+        letter-spacing:1px;
+    }
+ #name
+    {
+        cursor: auto;
+        position:absolute;
+        width:auto;
+        top: 80%;
+        left: 58%;
+        width: 150px;
+        height: 40px;
+        padding:5px 10px;
+        /*display: none;*/
+        text-align: center;
+        letter-spacing:1px;
+        background-image: url(img/logo.png);
+    }
+    #pigg
+    {
+        position:absolute;
+        width:auto;
+        top: 78%;
+        left: 35%;
+        width: 60px;
+        height: 50px;
+
+    }
+    </style>
+    
+<!-------------------------------->  
+<style>
+     #degree
+    {
+      width: 462px;
+      height: 600px;
+      overflow: visible;
+      /*margin: 0px auto;*/
+      position: absolute;
+      top: 10%;
+      left: 35%;
+    }
+    #readName
+    {
+        font-size: 28px;
+        width: 462px;
+        height: 600px;
+        overflow: visible;
+        position: absolute;
+        top: 39.5%;
+        left: 45%;
+    }
+    #gift
+    {
+        width: 120px;
+        height: 100px;
+        overflow: visible;
+        position: absolute;
+        top: 66%;
+        left: 47.3%;
+    }
+    .pigtalk
+        {
+            /*
+            top: 50px; 
+            left: 370px;
+            */
+            top: 0px; 
+            left: 400px;
+            position: absolute;
+        }
+    .pigTalk
+    {
+        /*
+        width: 280px; 
+        height: 150px; 
+        */
+        width: 380px; 
+        height: 260px;
+        position: absolute;
+    }
+    .pigSay
+      {
+            position: absolute;
+          /*
+            left: 790px;
+            top: 95px;
+          */
+            left: 900px;
+            top: 25px;
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+            font-size: 20px;
+      }
+      .pigSay1
+      {
+            position: absolute;
+          /*
+            left: 790px;
+            top: 95px;
+          */
+          /*
+            left: 900px;
+            top: 95px;*/
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+            font-size: 20px;
+      }
+    #picPig
+        {
+            width: 100px; 
+            height: 100px; 
+            max-width:100%; 
+            top: 50px;
+            left: 1500px;
+            display:  block; 
+            text-align: center; 
+            position: absolute; 
+            
+        }
+       #picPig1
+        {
+            width: 350px; 
+            height: 350px; 
+            max-width:100%; 
+            top: 250px;
+            left: 630px;
+            display:  block; 
+            text-align: center; 
+            position: absolute; 
+            
+        }
+     .next1
+      {
+            position: absolute;
+            left: 1000px;
+            top: 500px;
+      }
+      .next11
+      {
+            position: absolute;
+            width: 150px; 
+            height: 80px; 
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+            font-size: 20px;
+      }
+      .not
+    {
+            position: absolute;
+            top: 226px;
+            left: 666px;
+            width: 200px; 
+            height: 280px; 
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+            font-size: 20px;
+    }
+    
+</style>
+        
+<script>
+$(document).ready(function() {
+    start();
+    //$('.test').hide();
+    $('.degree').hide();
+    $(' .pigface').hide();
+    $('.answer img').css( 'cursor', 'pointer' );
+    $('#figure1').hide();
+    $('.pig').hide();
+    
+   //threeStart();
+    //three();
+///////////////////////// 
+    $('.ooo').hide();
+     $('.xxx').hide();
+    $('.ooo1').hide();
+    $('.Question1').hide();
+    $('.Question2').hide();
+    $('.Question3').hide();
+    $('.Question4').hide();
+    $('.Question5').hide();
+    /////////////////////////
+    $('.not').hide();
+         
+           
+});
+    
+/*$(".correct").click(function() {
+$(this).css({"background-color": "brown"});
+});*/
+
+</script>
+
+<script>
+    function clickhover(){
+        $(".answer #a11").hover(
+            function (){
+                $(this).attr('src','img/Q1A1-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q1A1-1.png');
+            }
+            );
+        $(".answer #a12").hover(
+            function (){
+                $(this).attr('src','img/Q1A2-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q1A2-1.png');
+            }
+            );
+     $(".answer #a13").hover(
+            function (){
+                $(this).attr('src','img/Q1A3-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q1A3-1.png');
+            }
+            );
+     $(".answer #a14").hover(
+            function (){
+                $(this).attr('src','img/Q1A4-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q1A4-1.png');
+            });
+         /////////////////////////////////////
+          $(".answer #a21").hover(
+            function (){
+                $(this).attr('src','img/Q2A1-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q2A1-1.png');
+            }
+            );
+        $(".answer #a22").hover(
+            function (){
+                $(this).attr('src','img/Q2A2-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q2A2-1.png');
+            }
+            );
+     $(".answer #a23").hover(
+            function (){
+                $(this).attr('src','img/Q2A3-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q2A3-1.png');
+            }
+            );
+     $(".answer #a24").hover(
+            function (){
+                $(this).attr('src','img/Q2A4-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q2A4-1.png');
+            }
+            );
+    /////////////////////////////////////
+          $(".answer #a31").hover(
+            function (){
+                $(this).attr('src','img/Q3A1-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q3A1-1.png');
+            }
+            );
+        $(".answer #a32").hover(
+            function (){
+                $(this).attr('src','img/Q3A2-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q3A2-1.png');
+            }
+            );
+     $(".answer #a33").hover(
+            function (){
+                $(this).attr('src','img/Q3A3-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q3A3-1.png');
+            }
+            );
+     $(".answer #a34").hover(
+            function (){
+                $(this).attr('src','img/Q3A4-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q3A4-1.png');
+            }
+            );
+/////////////////////////
+    /////////////////////////////////////
+          $(".answer #a41").hover(
+            function (){
+                $(this).attr('src','img/Q4A1-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q4A1-1.png');
+            }
+            );
+        $(".answer #a42").hover(
+            function (){
+                $(this).attr('src','img/Q4A2-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q4A2-1.png');
+            }
+            );
+     $(".answer #a43").hover(
+            function (){
+                $(this).attr('src','img/Q4A3-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q4A3-1.png');
+            }
+            );
+     $(".answer #a44").hover(
+            function (){
+                $(this).attr('src','img/Q4A4-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q4A4-1.png');
+            }
+            );
+/////////////////////////
+    /////////////////////////////////////
+          $(".answer #a51").hover(
+            function (){
+                $(this).attr('src','img/Q5A1-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q5A1-1.png');
+            }
+            );
+        $(".answer #a52").hover(
+            function (){
+                $(this).attr('src','img/Q5A2-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q5A2-1.png');
+            }
+            );
+     $(".answer #a53").hover(
+            function (){
+                $(this).attr('src','img/Q5A3-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q5A3-1.png');
+            }
+            );
+     $(".answer #a54").hover(
+            function (){
+                $(this).attr('src','img/Q5A4-2.png');
+            },
+            function (){
+            $(this).attr('src','img/Q5A4-1.png');
+            }
+            );
+    }
+
+</script>
+    
+<script>
+    var score = 50;
+    var NO = new Audio("music/no.mp3");
+    var YES = new Audio("music/yes.mp3");
+    
+    function click(){
+        
+         var i=0;
+      
+        $(".answer [data]").click(
+            
+            function(){
+               i+=1;
+              if( $(this).attr('data')==10)
+                  {
+                      $('.ooo').show().animate(
+                    {
+                        top: '100px',
+                        left: '500px',
+                        width: '550px', 
+                        height: '550px',
+
+                    },
+                    800,
+                    'easeOutElastic'
+                    );
+                    score += 10;
+                     $('#score2').text(score);
+                     YES.play();
+                    $('.ooo').delay(800).fadeOut(100);
+                      if(i==1){Q1o(); $('.not').fadeOut(2200);}
+                      if(i==2){Q2o(); $('.not').fadeOut(2200);}
+                      if(i==3){Q3o(); $('.not').fadeOut(2200);}
+                      if(i==4){Q4o(); $('.not').fadeOut(2200);}
+                      if(i==5){Q5o(); $('.not').fadeOut(2200);}
+                  }
+                else
+                  {
+                      $('.xxx').show(0,function(){
+                        $(this).animate(
+                        {
+                            top: '100px',
+                            left: '500px',
+                            width: '550px', 
+                            height: '550px',
+                        },1500,'easeOutElastic').fadeOut(800);
+                          NO.play();
+                      if(i==1)A1s();
+                      if(i==2)A2s();
+                      if(i==3)A3s();
+                      if(i==4)A4s();
+                      if(i==5)A5s();
+                      $('.ooo1').delay(1500).fadeIn(800);
+                      $('.ooo1').delay(1000).fadeOut(100);
+                      //$('.Question1').delay(5000).hide(100);
+                      if(i==1){Q1x(); $('.not').fadeOut(4000);};
+                      if(i==2){Q2x(); $('.not').fadeOut(4000);};
+                      if(i==3){Q3x(); $('.not').fadeOut(4000);};
+                      if(i==4){Q4x(); $('.not').fadeOut(4000);};
+                      if(i==5){Q5x(); $('.not').fadeOut(4000);};
+                      })
+                  };
+                
+                
+                if(score >= 100)
+                  {
+                      $('#score2').css({left:'98px'})
+                  }
+                if(i>=5){
+                    $('.test').delay(1000).toggle(2000);
+                    threeStart();
+                }
+                
+     
+                   
+         });
+        
+        
+        
+         
+    }
+    
+</script>
+    
+<script>
+        function Q1o(){
+            $('.not').show(); 
+            $('.Question1').delay(1800).hide(100);
+            if($('.Question1').hide(100)){
+                 $('.Question2').delay(2300).slideDown(800);
+  
+            };
+        }
+        function Q2o(){
+            $('.not').show(); 
+            $('.Question2').delay(1800).hide(100);
+            if($('.Question2').hide(100)){
+                 $('.Question3').delay(2300).slideDown(800);
+
+            };
+        }
+        function Q3o(){
+            $('.not').show(); 
+            $('.Question3').delay(1800).hide(100);
+            if($('.Question3').hide(100)){
+                 $('.Question4').delay(2300).slideDown(800);
+
+            };
+        }
+        function Q4o(){
+            $('.not').show(); 
+            $('.Question4').delay(1800).hide(100);
+            if($('.Question4').hide(100)){
+                 $('.Question5').delay(2300).slideDown(800);
+       
+            };
+        }
+        function Q5o(){
+            $('.not').show(); 
+            $('.Question5').delay(1800).hide(100);
+            if($('.Question5').hide(100)){
+                 //$('.Question4').delay(6000).slideDown(800);
+           
+            };
+        }
+    //////////////////////////////////////
+        function Q1x(){
+            $('.not').show();
+            $('.Question1').delay(3500).hide(100);
+            if($('.Question1').hide(100)){
+                 $('.Question2').delay(4000).slideDown(800);
+                 
+            };
+        }  
+        function Q2x(){
+            //$('.not').show(); 
+            $('.Question2').delay(3500).hide(100);
+            if($('.Question2').hide(100)){
+                 $('.Question3').delay(4000).slideDown(800);
+               
+            };
+        }
+        function Q3x(){
+            $('.not').show(); 
+            $('.Question3').delay(3500).hide(100);
+            if($('.Question3').hide(100)){
+                 $('.Question4').delay(4000).slideDown(800);
+             
+            };
+        }
+        function Q4x(){
+            $('.not').show(); 
+            $('.Question4').delay(3500).hide(100);
+            if($('.Question4').hide(100)){
+                 $('.Question5').delay(4000).slideDown(800);
+                
+            };
+        }
+        function Q5x(){
+            $('.not').show(); 
+            $('.Question5').delay(3500).hide(100);
+            if($('.Question5').hide(100)){
+                threeStart();
+                
+            };
+            
+        }
+    //////////////////////////////////////
+        function A1s(){
+            $('.ooo1').css({top:'236px',left:'835px'});
+        };
+        function A2s(){
+                $('.ooo1').css({top:'306px',left:'835px'});
+            };
+        function A3s(){
+                $('.ooo1').css({top:'446px',left:'835px'});
+            };
+        function A4s(){
+                $('.ooo1').css({top:'376px',left:'835px'});
+            };
+        function A5s(){
+                $('.ooo1').css({top:'306px',left:'835px'});
+            };
+    
+</script>
+    
+<script>
+
+</script>
+    
+<script>
+
+    function start(){
+
+            $("#figure").hide();
+            
+            $("#figure").slideToggle(500)
+            $("#caption").click(function(){
+                $('.Question1').delay(1000).slideDown(800);
+                clickhover();
+                click();
+                $(' .pigface').slideToggle(1500);
+                pigImg();
+                $("#figure").fadeOut(1000);
+                
+        })
+        /*
+        $('.Question1').delay(1000).slideDown(800);
+                clickhover();
+                click();
+                $(' .pigface').slideToggle(1500);
+                pigImg();*/
+    };
+
+</script>
+    
+<!--pig face-->
+<script>
+        pImg = new Array("img/logo.png","img/logo2.png","img/logo3.png","img/logo4.png");
+        size = pImg.length;
+        i = 0;
+        
+        function pigImg(){
+            pigface1.src = pImg[i];
+            i++;
+            if (i>=size) i = 0;
+            setTimeout("pigImg()",200);
+        };
+      /* 
+    function pigImg(){
+            $('.pigface').animate({
+              
+                pigface1.src = pImg[i];
+                i++;
+                
+                if (i>=size) i = 0;
+                
+            });
+            
+        };
+    .pigface
+     {
+         
+         position: absolute;
+     } */
+
+</script>
+    
+<script>
+    function threeStart()
+    {
+        $('#picPig1').hide();
+        $('.pigTalk').hide();
+        $('.pigSay1').hide();
+        $('.next11').hide( );
+        $('.pig').fadeIn(2000);
+        $('#picPig1').delay(2000).fadeIn(1000),
+        $('.pigTalk').delay(2500).fadeIn(1000); 
+        Psay();
+        $('.next11').delay(9500).slideToggle(800);
+        /////////////////////////
+        $('.next11').css({cursor:'pointer'});
+        $('.next11').click(          
+            function() {
+                 $('.pig').slideDown(800);
+                 three();
+                
+            })
+    }
+</script>    
+    
+<script>
+
+
+    function three(){
+       $('.pig').fadeOut(500);
+         $("#figure1").hide();
+         $("#figure1").slideToggle(1000)
+        $("#caption1").click(function(){
+               
+                //$('.Question1').delay(1000).slideDown(800);
+               // $('#degree').show();
+              $('.degree').delay(1000).toggle(1000);
+               degreeImg(score);
+             
+                $("#figure1").fadeOut(1000);
+            $("#gift").hover(
+                function (){
+                    $(this).attr('src','img/禮物盒打開.png');
+                },
+                function (){
+                $(this).attr('src','img/禮物盒.png');
+                });
+             $("#gift").css({cursor:'pointer'});
+            //Psay();
+             $('.example5').show();
+            
+        });
+    }
+   
+</script>
+    
+<script>
+    /*
+      dImg = new Array("img/50獎狀.png","img/60獎狀.png","img/70獎狀.png","img/80獎狀.png","img/90獎狀.png","img/100獎狀.png");
+     */
+    //var yourName = document.getElementById('name');
+   // var yourName =   $('input[name="name"]').val();
+    //var yourName =   $('input[name="name"]').val();
+    //var yourName =   $('#name').attr('value');
+ 
+        function degreeImg(j){
+               var yourName =   $('#name').val();
+                $('#readName').text (yourName);
+            if(j==50)
+                {
+                     degree.src = "img/50獎狀.png";
+                     $('.degree').slideDown(800);
+                }
+            if(j==60)
+                {
+                     degree.src = "img/60獎狀.png";
+                     $('.degree').slideDown(800);
+                }
+            if(j==70)
+                {
+                     degree.src = "img/70獎狀.png";
+                     $('.degree').slideDown(800);
+                }
+            if(j==80)
+                {
+                     degree.src = "img/80獎狀.png";
+                     $('.degree').slideDown(800);
+                }
+            if(j==90)
+                {
+                     degree.src = "img/90獎狀.png";
+                     $('.degree').slideDown(800);
+                }
+            if(j==100)
+                {
+                     degree.src = "img/100獎狀.png";
+                     $('.degree').slideDown(800);
+                }
+            
+        };
+      
+  </script>
+
+    <!--pig say-->
+<script>
+    var Psay = function(){
+         $('.example5').typeIt({
+        strings: ["太厲害了", "這些關卡都難不倒你","剩下最後一個任務","完成他吧","最棒的孩子"],
+        speed: 100,
+        startDelay:4000,
+        cursor:false,
+        autoSmart: false
+        })
+
+    
+    }
+    
+    var Psay1 = function(){
+         $('.example6').typeIt({
+        strings: ["孩子們！", "我準備了幾道關卡，","Go Go Go！！！"],
+        speed: 300,
+        startDelay:500,
+        autoSmart: false
+        })
+
+    
+    }
+   
+             
+</script>
+    
+</head>
+    
+<body>
+<!-----------No.2------------------>
+<div class="test">
+<div class="Question1">
+    <div class="Question">
+        <img src="img/Q1.png" width="400" height="180"  >
+    </div>
+     <!------------------------------------->        
+            <div class="answer" id="a1">
+                <img src="img/Q1A1-1.png" width="200" height="60"  id="a11" data="10">
+            </div>
+           <!------------------------------------->
+           <div class="answer" id="a2">
+                <img src="img/Q1A2-1.png" width="200" height="60"  id="a12" data="0">
+            </div>
+             <!------------------------------------->
+            <div class="answer" id="a3">
+                <img src="img/Q1A3-1.png" width="200" height="60"  id="a13" data="0">
+            </div>
+             <!------------------------------------->
+            <div class="answer" id="a4">
+                <img src="img/Q1A4-1.png" width="200" height="60"  id="a14" data="0">
+            </div>
+ 
+</div>
+ <!---------------Q2------------>
+<div class="Question2">
+    <div class="Question">
+        <img src="img/Q2.png" width="400" height="180">
+    </div>
+     <!------------------------------------->        
+            <div class="answer" id="a1">
+                <img src="img/Q2A1-1.png" width="200" height="60"  id="a21" data="0">
+            </div>
+           <!------------------------------------->
+           <div class="answer" id="a2">
+                <img src="img/Q2A2-1.png" width="200" height="60"  id="a22" data="10">
+            </div>
+             <!------------------------------------->
+            <div class="answer" id="a3">
+                <img src="img/Q2A3-1.png" width="200" height="60"  id="a23" data="0">
+            </div>
+             <!------------------------------------->
+            <div class="answer" id="a4">
+                <img src="img/Q2A4-1.png" width="200" height="60"  id="a24" data="0">
+            </div>
+ 
+</div> 
+<!---------------Q3------------>
+<div class="Question3">
+    <div class="Question">
+        <img src="img/Q3.png" width="400" height="180">
+    </div>
+     <!------------------------------------->        
+            <div class="answer" id="a1">
+                <img src="img/Q3A1-1.png" width="200" height="60"  id="a31" data="0">
+            </div>
+           <!------------------------------------->
+           <div class="answer" id="a2">
+                <img src="img/Q3A2-1.png" width="200" height="60"  id="a32" data="0">
+            </div>
+             <!------------------------------------->
+            <div class="answer" id="a3">
+                <img src="img/Q3A3-1.png" width="200" height="60"  id="a33" data="0">
+            </div>
+             <!------------------------------------->
+            <div class="answer" id="a4">
+                <img src="img/Q3A4-1.png" width="200" height="60"  id="a34" data="10">
+            </div>
+ 
+</div>
+<!---------------Q4------------>
+<div class="Question4">
+    <div class="Question">
+        <img src="img/Q4.png" width="400" height="180">
+    </div>
+     <!------------------------------------->        
+            <div class="answer" id="a1">
+                <img src="img/Q4A1-1.png" width="200" height="60"  id="a41" data="0">
+            </div>
+           <!------------------------------------->
+           <div class="answer" id="a2">
+                <img src="img/Q4A2-1.png" width="200" height="60"  id="a42" data="0">
+            </div>
+             <!------------------------------------->
+            <div class="answer" id="a3">
+                <img src="img/Q4A3-1.png" width="200" height="60"  id="a43" data="10">
+            </div>
+             <!------------------------------------->
+            <div class="answer" id="a4">
+                <img src="img/Q4A4-1.png" width="200" height="60"  id="a44" data="0">
+            </div>
+ 
+</div>   
+<!---------------Q5------------>
+<div class="Question5">
+    <div class="Question">
+        <img src="img/Q5.png" width="400" height="180">
+    </div>
+     <!------------------------------------->        
+            <div class="answer" id="a1">
+                <img src="img/Q5A1-1.png" width="200" height="60"  id="a51" data="0">
+            </div>
+           <!------------------------------------->
+           <div class="answer" id="a2">
+                <img src="img/Q5A2-1.png" width="200" height="60"  id="a52" data="10">
+            </div>
+             <!------------------------------------->
+            <div class="answer" id="a3">
+                <img src="img/Q5A3-1.png" width="200" height="60"  id="a53" data="0">
+            </div>
+             <!------------------------------------->
+            <div class="answer" id="a4">
+                <img src="img/Q5A4-1.png" width="200" height="60"  id="a54" data="0">
+            </div>
+ 
+</div>
+ <!--------------------------->
+             <div class="answer">
+            <img class="ooo" src="img/圈.png"/>
+            </div>
+            <div class="answer">
+            <img class="xxx" src="img/叉.png"/>
+            </div>
+            <div class="answer">
+            <img class="ooo1" src="img/circle.png"/>
+            </div>
+            <div id="Score">
+                <img id="score1" src="img/分數.png"/>
+                <h2 id="score2">50</h2>
+            </div>
+            <div id="figure">
+                <img src="img/第二關介紹.png" width="500" height="300" id="leveldescription">
+                <img id="caption" src="img/ok.png"/>
+            </div>
+    
+     <!--------------------------->   
+    <div class="pigface">
+        <img id="pigface1" />
+    </div>
+    <!--------------------------->
+    <div class="not"></div>
+</div>
+
+<!--------------------------->
+        <div id="figure1">
+            <img src="img/第三關介紹.png" width="500" height="300" id="leveldescription1">
+            <input id="name" type="text" name="name" placeholder="請輸入姓名...">
+            <img id="caption1" src="img/ok.png"/>
+            <!---<input type="submit" id="caption1" />---->
+            <img id="pigg" src="img/logo.png"/>
+           
+        </div>
+<!--------------------------->
+    <div class="degree">
+        <img id="degree" border="0px" />
+        <label id=readName></label>
+        <a href="final.html"><img  id=gift src="img/禮物盒.png"/></a>
+    </div>
+<!--------------------------->
+    <div class="pig">
+    <div class="picPig">
+        <img id="picPig1"  src="img/豬站著.png"/>
+        
+    </div>    
+        
+    <div class="pigtalk">
+        <img class="pigTalk" src="img/對話框框.png"/>
+    </div>
+    
+    <div class="pigSay">       
+        <p class="example5"></p>
+    </div>
+    
+    <div class="pigSay1">       
+        <p class="example6"></p>
+    </div>
+     <div class="next1">
+        <img class="next11" src="img/next.png"/>
+    </div>      
+    </div>
+<!--------------------------->
+    
+</body>
+</html>

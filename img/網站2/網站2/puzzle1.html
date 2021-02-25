@@ -1,0 +1,584 @@
+
+<html lang="zh-TW">
+     <title>牛逼肥宅賀年網</title>
+<head>
+     <link rel="shortcut icon" href="img/logo.ico"> 
+
+    <script src="_js/jquery.min.js"></script>
+    <scipt src="_js/jquery-ui.min.js"></scipt>
+    <script src="_js/jQueryRotate.2.2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+
+   
+
+  <style>
+      #draggable, #draggable2 { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+      #droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
+      
+  </style>
+    
+
+  <style>
+          html 
+          {
+            height: 100%;
+            background-image: url(img/網站底色.png)
+        }
+      
+        body
+        {
+            font-family: "Microsoft JhengHei";  
+           
+        }
+        #Pig0
+        {   
+            top: 40px;
+            left: 50px;        
+            position: absolute;
+            z-index: -999px;
+        }
+        .pig0
+        {        
+            width: 300px; 
+            height: 200px; 
+            position: absolute;
+            z-index: -999px;
+        }
+        #Pig
+        {   
+            top: 40px;
+            left: 250px;        
+            position: absolute;
+            z-index: -999px;
+        }
+        #pig
+        {        
+            width: 930px; 
+            height: 600px; 
+            position: absolute;
+            z-index: -999px;
+        }
+        #Pig1
+        {   
+            top: 155px;
+            left: 325px;
+        }
+        #pig1
+        {  
+            width: 90px; 
+            height: 150px; 
+            position: absolute;
+        }
+        #Pig2
+        {   
+            top: 138px;
+            left: 360px;  
+            position: absolute;
+        }
+        #pig2
+        {        
+            width: 82.8px; 
+            height: 230px; 
+            position: absolute;
+        }
+        #Pig3
+        {   
+            top: 115px;
+            left: 388px;
+            position: absolute;
+        }
+        #pig3
+        {        
+            width: 182px; 
+            height: 280px; 
+            position: absolute;
+        }
+        #Pig4
+        {   
+            top: 230px;
+            left: 372px; 
+            position: absolute;
+        }
+        #pig4
+        {    
+            width: 121.5px; 
+            height: 150px; 
+            position: absolute;
+        }
+        #Pig5
+        {   
+            top: 88px;
+            left: 475px;  
+            position: absolute;
+        }
+        #pig5
+        {        
+            width: 280.5px; 
+            height: 170px; 
+            position: absolute;
+        }
+        #Pig6
+        {   
+            top: 170px;
+            left: 440px;        
+            position: absolute;
+        }
+        #pig6
+        {        
+            width: 370.3px; 
+            height: 230px;  
+            position: absolute;
+        }
+        #Pig7
+        {   
+            top: 95px;
+            left: 605px;        
+            position: absolute;
+        }
+        #pig7
+        {        
+            width: 117px; 
+            height: 150px; 
+            position: absolute;
+        }
+        #Pig8
+        {   
+            top: 150px;
+            left: 623px;        
+            position: absolute;
+        }
+        #pig8
+        {        
+            width: 112.5px; 
+            height: 250px; 
+            position: absolute;
+        }
+      
+      /*----------------
+      1. 0.6:1
+      2. 0.36:1
+      3. 0.65:1
+      4. 0.81:1
+      5. 1.65:1
+      6. 1.61:1
+      7. 0.78:1
+      8. 0.45:1
+      --------------------*/
+        #Pig11
+        {   
+            top: 220px;
+            left: 140px;
+            position: absolute;
+        }
+        #pig11
+        {        
+            width: 60px; 
+            height: 100px; 
+            position: absolute;
+        }
+        #Pig22
+        {   
+            top: 250px;
+            left: 180px;;  
+            position: absolute;
+        }
+        #pig22
+        {        
+            width: 36px; 
+            height: 100px;
+            position: absolute;
+        }
+        #Pig33
+        {   
+            top: 160px;
+            left: 150px;;
+            position: absolute;
+        }
+        #pig33
+        {        
+            width: 65px; 
+            height: 100px; 
+            position: absolute;
+        }
+        #Pig44
+        {   
+            top: 160px;
+            left: 50px;
+            position: absolute;
+        }
+        #pig44
+        {                
+            width: 81px; 
+            height: 100px; 
+            position: absolute;
+        }
+        #Pig55
+        {   
+            top: 280px;
+            left: 80px;  
+            position: absolute;
+        }
+        #pig55
+        {        
+            width: 165px; 
+            height: 100px; 
+            position: absolute;
+        }
+        #Pig66
+        {   
+            top: 220px;
+            left: 50px;       
+            position: absolute;
+        }
+        #pig66
+        {        
+            width: 161px; 
+            height: 100px;  
+            position: absolute;
+        }
+        #Pig77
+        {   
+            top: 160px;
+            left: 100px;        
+            position: absolute;
+        }
+        #pig77
+        {        
+            width: 78px; 
+            height: 100px; 
+            position: absolute;
+        }
+        #Pig88
+        {   
+            top: 280px;
+            left: 50px;        
+            position: absolute;
+        }
+        #pig88
+        {        
+            width: 45px; 
+            height: 100px;; 
+            position: absolute;
+        }
+      
+      /*---------------- --------------------*/
+      [draggable="true"] {
+          /*
+           To prevent user selecting inside the drag source
+          */
+          user-select: none;
+          -moz-user-select: none;
+          -webkit-user-select: none;
+          -ms-user-select: none;
+        }
+      
+      .next
+      {
+            position: absolute;
+            left: 930px;
+            top: 650px;
+      }
+      .next1
+      {
+            position: absolute;
+            width: 150px; 
+            height: 80px; 
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+            font-size: 20px;
+      }
+      .ok
+      {
+            position: absolute;
+            left: 930px;
+            top: 650px;
+      }
+      .ok1
+      {
+            position: absolute;
+            width: 150px; 
+            height: 80px; 
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+            font-size: 20px;
+      }
+    </style>
+    
+<script>
+$(document).ready(function(){
+    var total=0;
+    var main = $("#main");
+    var destination = $("#destination");
+    var source = $("#source");
+    var res = $("#resultat");
+    res.html('<label class="result"   id="resultat"  >Score :0</label>' );
+    
+    $("#source").droppable({
+		'accept' : function (ui)
+		{
+			return true ; 
+		},
+			'addClasses': false,
+			'hoverClass': 'hover',
+			
+			 
+		'drop': function(event,ui)
+		{
+			
+	    var obj=$(this);
+		
+		var piece=ui.draggable;
+		var lastLocation=$.data(piece[0],'lastLocation');
+		piece.appendTo($(this));
+		
+   //alert(  lastLocation.position().top  + piece.position().top      );
+            
+        piece.css(
+		{
+		'left': lastLocation.position().left+'px',
+		'top': ( lastLocation.position().top  + piece.position().top   )+ 'px',
+		
+		});
+		
+		}
+			});
+    
+        //element 1 
+		var elmt1 = $( "#pig11 img" );
+		var elmt2 = $( "#pig22 img" );
+		var dest1 = $( "#pig1 img" );
+		var dest2 = $( "#pig2 img" );
+        
+        elmt1.draggable(
+	   {
+            opacity: 0.50,
+		'addClasses': false,
+		 'appendTo': 'body',
+         'zIndex': 10000,
+		'start': function(event,ui)
+        {
+        /* si c dans la bonne position on arrete le drag */
+        if($.data(this,'ok'))
+        {
+            return false;
+        }
+    },
+
+    'revert': 'invalid',
+    'containment': main
+		
+	}
+	
+	).appendTo(main);
+	
+	
+	 //alert(jQuery.data( elmt1, 'ok' ));
+	//alert(dest1.is(':parent') );
+	//alert(jQuery.data( elmt1, 'lastLocation' ));
+    
+    elmt2.draggable(
+	{
+		'addClasses': false,
+		'appendTo': 'body',
+         'zIndex': 10000,
+		'start': function(event,ui)
+    {
+        /* si c dans la bonne position on arrete le drag */
+        if($.data(this,'ok'))
+        {
+            return false;
+        }
+
+       
+    },
+	
+    'revert': 'invalid',
+    'containment': main
+		
+		}
+	
+	).appendTo(main);		
+
+
+//rendre la destination droppabla 
+	dest1.droppable(
+	{
+
+    'addClasses': false,
+	'hoverClass': 'hover',
+	 'drop': function(event,ui)
+    {
+        var obj=$(this);
+
+	if(obj.attr('data-num')==ui.draggable.attr('data-num'))
+	{
+		$.data(ui.draggable[0],'ok',true);
+		//res.text(parseInt(res.text())+1 );
+		ui.draggable.clone().appendTo(obj).css({top:"155",left:"325"});
+        //ui.draggable.hide();
+		 ui.draggable.css('cursor','default'); 
+
+		total++;
+		res.html('<label class="result"   id="resultat"  >Score :'+ total +'</label>' ) ;
+		if(total==4)
+		{
+			alert("you win");
+			}
+	}//fin if
+	
+	//end drop
+	}
+
+	
+	}).appendTo(destination);//fin dest.droppable()
+
+
+
+dest2.droppable(
+{
+	'accept': function(ui)
+    {
+
+	 return ( $(this).is(':empty') );
+	 //return true ; 
+    },
+    'addClasses': false,
+	'hoverClass': 'hover',
+	 'drop': function(event,ui)
+    {
+         obj=$(this);
+
+        ui.draggable.appendTo(obj);
+		
+		//pour fermer l'ajout multiple
+		obj.attr('data-check','t');
+		
+       $.data(ui.draggable[0],'lastLocation',obj);
+
+        ui.draggable.css(
+        {
+            'left': '0px',
+            'top': '0px'
+        });
+		
+		
+    //si la place est juste on la fixe ou on affiche resultat on compare l'attribut data-num
+	if(obj.attr('data-num')==ui.draggable.attr('data-num'))
+	{
+		$.data(ui.draggable[0],'ok',true);
+	//	res.text(parseInt(res.text())+1 );
+		
+		
+		 ui.draggable.css('cursor','default'); //on onleve le curseur 
+		  /* on ajoute un effet flash si c juste*/
+             ui.draggable.animate({width:'200pppx'})
+		total++;
+	res.html('<label class="result"   id="resultat"  >Score :'+ total +'</label>' ) ;
+		//res.text(res.text()+total   );
+		if(total==4)
+		{
+			alert("you win");
+		}
+	}//fin if
+	
+	//end drop
+	}
+	
+}).appendTo(destination);// droppable
+
+    
+
+});         
+
+    
+</script>
+
+<!--   3   --->
+<!--   4   --->
+<!--   5   --->
+<!--   6   --->
+<!--   7   --->
+<!--   8   --->
+    
+
+</head>
+    
+<body >
+    <!---
+    <div class="pig0">
+        <img class="pig0" src="img/整隻豬.png">
+    </div>
+    --->
+    <div id="pig">
+        <img id="pig" src="img/整隻豬2.png" >
+    </div>
+    <div id="distination" class="distination">
+    <div id="pig1">
+        <img id="pig1" data-num="1" src="img/豬頰肉2.png">
+    </div>
+    <div id="pig2">
+        <img id="pig2" data-num="2" src="img/豬頸肉2.png">
+    </div>
+    <div id="pig3">
+        <img id="pig3" src="img/肩頰肉2.png">
+    </div>
+    <div id="pig4">
+        <img id="pig4" src="img/前腿肉2.png">
+    </div>
+    <div id="pig5">
+        <img id="pig5" src="img/大里肌2.png">
+    </div>
+    <div id="pig6">
+        <img id="pig6" src="img/腹脅肉2.png">
+    </div>
+    <div id="pig7">
+        <img id="pig7" src="img/小里肌2.png">
+    </div>
+    <div id="pig8">
+        <img id="pig8" src="img/後腿肉2.png">
+    </div>
+    </div>
+    <!-------------------------------------->
+    <div id="source" class="source">
+    <div id="pig11" >
+        <img id="pig11" data-num="1" src="img/豬頰肉.png" />
+    </div>
+    <div id="pig22">
+        <img id="pig22" data-num="2" src="img/豬頸肉.png">
+    </div>
+    <div id="pig33">
+        <img id="pig33" src="img/肩頰肉.png">
+    </div>
+    <div id="pig44">
+        <img id="pig44" src="img/前腿肉.png">
+    </div>
+    <div id="pig55">
+        <img id="pig55" src="img/大里肌.png">
+    </div>
+    <div id="pig66">
+        <img id="pig66" src="img/腹脅肉.png">
+    </div>
+    <div id="pig77">
+        <img id="pig77" src="img/小里肌.png">
+    </div>
+    <div id="pig88" >
+        <img id="pig88" src="img/後腿肉.png">
+    </div>
+    </div>
+     <!-------------------------------------->
+    <div id="draggable" class="ui-widget-content">
+      <p>I revert when I'm dropped</p>
+    </div>
+
+    <div id="draggable2" class="ui-widget-content">
+      <p>I revert when I'm not dropped</p>
+    </div>
+
+    <div id="droppable" class="ui-widget-header">
+      <p>Drop me here</p>
+    </div>
+    
+</body>
+</html>

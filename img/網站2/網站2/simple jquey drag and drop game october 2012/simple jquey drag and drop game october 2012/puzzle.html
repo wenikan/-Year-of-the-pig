@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jPuzzle</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="codes/styles.css" /> 
+       <!-- <link href="codes/jquery-ui.css" rel="stylesheet" type="text/css"/>-->
+		 <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+		<script src="codes/jquery.min.js"></script>
+		<script src="codes/jquery-ui-1.9.0.custom.js"></script>
+		<script src="codes/game.js"></script>
+		<script>			
+			
+		</script>
+		<style>
+
+		</style>
+	</head>
+	<body>
+		
+<span id="pere" class="main">
+
+
+	<span id="source" class="source">
+    
+        <span  id="elmt1"  data-num="1"  style="background-image:url(images/router.png) ; width:100px;height:100px; display:block; cursor: move;   position:absolute; left:50px; top:10px;"    >
+        </span> 
+        
+        <span id="elmt2"  data-num="2"  style="background-image:url(images/firewall.png) ; width:100px;height:100px; display:block; cursor: move;   position:absolute; left:50px; top:120px;"  >
+        </span>
+        
+        <span id="elmt3"  data-num="3"  style="background-image:url(images/hub.jpg) ; width:100px;height:100px; display:block; cursor: move;   position:absolute; left:50px; top:230px;"  >
+        </span>
+        
+         <span id="elmt4"  data-num="4"  style="background-image:url(images/switch.png); width:100px;height:100px; display:block; cursor: move;   position:absolute; left:50px; top:340px;"  >
+        </span>
+        
+        <span>
+        </span>
+        
+        <span>
+        </span>
+    </span>
+
+    
+    <span id="resultat" class="resultat">
+     <p><label class="result"   id="resultat"  ></label>     </p>
+    </span>
+   
+	<span  id="destination" class="destination">
+     
+     
+     <span  id="dest1"  data-num="2"   style="background-image:url(images/guess2.png) ; width:100px;height:100px; display:block;    position:absolute; left:50px; top:8px;"></span>
+     <span   class="text" style=" position:absolute; left:70px; top:95px;" >Firewall</span>
+        
+      <span  id="dest2"  data-num="3"   style="background-image:url(images/guess2.png) ; width:100px;height:100px; display:block;   position:absolute; left:50px; top:130px;" ></span>
+      <span   class="text" style=" position:absolute; left:85px; top:220px;" >Hub</span>
+     
+      <span  id="dest3"  data-num="1"   style="background-image:url(images/guess2.png) ; width:100px;height:100px; display:block;    position:absolute; left:50px; top:260px;" ></span>
+      <span   class="text" style=" position:absolute; left:75px; top:350px;" >Router</span>
+      
+      <span  id="dest4"  data-num="4"   style="background-image:url(images/guess2.png) ; width:100px;height:100px; display:block;   position:absolute; left:50px; top:390px;" ></span>
+      <span   class="text" style=" position:absolute; left:75px; top:480px;" >switch</span>
+     
+     
+     
+    </span>
+
+</span>
+
+<div id="dialog"     style="display:none" title="Congrat" >
+    <p>You Win</p>
+</div>
+
+        
+        
+	</body>
+</html>

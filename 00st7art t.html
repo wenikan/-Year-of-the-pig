@@ -1,0 +1,494 @@
+
+<html lang="zh-TW">
+     <title>牛逼肥宅賀年網</title>
+<head>
+     <link rel="shortcut icon" href="img/logo.ico"> 
+
+    <script src="_js/jquery.min.js"></script>
+    <scipt src="_js/jquery-ui.min.js"></scipt>
+    <script src="_js/jQueryRotate.2.2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+
+
+    
+
+  <style>
+          html 
+          {
+            height: 100%;
+            background-image: url(img/藍天.png)
+        }
+      
+        body
+        {
+            font-family: "Microsoft JhengHei";  
+           
+        }
+        .bg
+        {   
+            /*
+            left: 500px;
+            */
+            position: absolute;
+            z-index: -999px;
+        }
+        .bg1
+        {
+         
+            width: 600px; 
+            height: 710px; 
+            position: absolute;
+            z-index: -999px;
+        }
+        .bg2
+        {
+            /*
+             width: 600px; 
+             height: 250px; 
+            */
+             width: 1520px; 
+             height: 250px;
+             top: 480px;         
+             position: absolute;
+             z-index: -999px;
+        }
+        #picDog
+        {
+            width: 250px; 
+            height: 300px; 
+            max-width:100%; 
+            top: 300px;
+            left: 700px;
+            display:  block; 
+            text-align: center; 
+            position: absolute;
+        }
+        .dogtalk
+        {
+            top: 70px; 
+            left: 270px;
+            position: absolute;
+        }
+        .dogTalk
+        {
+            width: 280px; 
+            height: 150px; 
+            position: absolute;
+        }
+        .pigtalk
+        {
+            /*
+            top: 50px; 
+            left: 370px;
+            */
+            top: 43px; 
+            left: 400px;
+            position: absolute;
+        }
+        .pigTalk
+        {
+            /*
+            width: 280px; 
+            height: 150px; 
+            */
+            width: 380px; 
+            height: 160px;
+            position: absolute;
+        }
+        #picPig
+        {
+            width: 100px; 
+            height: 100px; 
+            max-width:100%; 
+            top: 50px;
+            left: 1500px;
+            display:  block; 
+            text-align: center; 
+            position: absolute; 
+            
+        }
+       #picPig1
+        {
+            width: 350px; 
+            height: 350px; 
+            max-width:100%; 
+            top: 250px;
+            left: 630px;
+            display:  block; 
+            text-align: center; 
+            position: absolute; 
+            
+        }
+        .ui-progressbar 
+        {
+            position: relative;
+        }
+        .progress-label 
+        {
+            position: absolute;
+            left: 50%;
+            top: 4px;
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+        }
+      .dogSay
+      {
+            position: absolute;
+            left: 590px;
+            top: 160px;
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+            font-size: 20px;
+      }
+      .pigSay
+      {
+            position: absolute;
+          /*
+            left: 790px;
+            top: 95px;
+          */
+            left: 900px;
+            top: 95px;
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+            font-size: 20px;
+      }
+      .pigSay1
+      {
+            position: absolute;
+          /*
+            left: 790px;
+            top: 95px;
+          */
+            left: 900px;
+            top: 95px;
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+            font-size: 20px;
+      }
+      .next1
+      {
+            position: absolute;
+            left: 930px;
+            top: 650px;
+      }
+      .next11
+      {
+            position: absolute;
+            width: 150px; 
+            height: 80px; 
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+            font-size: 20px;
+      }
+      .next2
+      {
+            position: absolute;
+            left: 930px;
+            top: 650px;
+      }
+      .next22
+      {
+            position: absolute;
+            width: 150px; 
+            height: 80px; 
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+            font-size: 20px;
+      }
+      .ok
+      {
+            position: absolute;
+            left: 930px;
+            top: 650px;
+      }
+      .ok1
+      {
+            position: absolute;
+            width: 150px; 
+            height: 80px; 
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+            font-size: 20px;
+      }
+    </style>
+    
+<script>
+$(document).ready(function(){
+    Dsay();   
+    
+    $('.dogtalk').hide();
+    $('.dogSay').hide();
+    $('.next11').hide();
+    $('.next22').hide();
+    $('.ok1').hide();
+    $('.pigtalk').hide();
+    $(function() {
+        $( "#picDog" ).hide();
+        $('#picPig').hide();
+        $('#picPig1').hide();
+        var progressbar = $( "#progressbar" ),
+        progressLabel = $( ".progress-label" );
+ 
+        progressbar.progressbar({
+          value: false,
+          change: function() {
+            progressLabel.text( progressbar.progressbar( "value" ) + "%" );
+          },
+          complete: function() {
+            progressLabel.text( "完成！" );
+            $( "#progressbar" ).hide();
+            $( "#picDog" ).show();
+            dogImg();
+            $('.dogtalk').delay(500).fadeIn(500);
+            $('.dogSay').delay(500).fadeIn(500);
+            $('.next11').delay(6000).fadeIn(1000);
+           
+          }
+        });
+ 
+        function progress() {
+          var val = progressbar.progressbar( "value" ) || 50;
+
+          progressbar.progressbar( "value", val + 1 );
+
+          if ( val < 99 ) {
+            setTimeout( progress, 50 );
+          };
+         
+        };
+
+        setTimeout( progress, 50 );
+        
+       
+  });
+     ////////////////////    
+        $('.next11').click(          
+            function() {
+                $('#picPig').show();
+                $('#picPig').stop().animate(
+                {
+                    top: '0',
+                    left: '50px',
+                    width: '300px', 
+                    height: '300px',
+                    
+                },
+                1500,
+                'easeOutBounce'
+                ), 
+                $('#picDog').delay(500).animate(
+                {
+                    top: '80px',
+                    left: '100px',
+                    width: '50px', 
+                    height: '60px',
+                },
+                1500,
+                'easeInOutSine'
+                ),
+                $('#picDog').fadeOut(2000),
+                $('.dogtalk').delay(300).fadeOut(300),
+                $('.dogSay').delay(300).fadeOut(300),
+                $('#picPig').animate(
+                    {
+                        top: '300px',
+                        left: '700px',
+                    }),
+                $('#picPig').fadeOut(100),
+                $('#picPig1').delay(2000).fadeIn(500),
+                $('.pigtalk').delay(3000).fadeIn(800),
+                    $('.example5').delay(3000).fadeIn(800),
+                Psay();
+                $('.pigSay').delay(3000).fadeIn(800),
+                
+                $('.next11').hide();
+                $('.next22').delay(12000).fadeIn(2000)
+          
+                
+            },
+            /*
+            function() {
+                $('.dog').stop().animate(
+                {
+                    rotate:'15',
+                },
+                1500,
+                'easeInOutSine'
+                ) 
+            },*/
+        )
+    /////////////////////////
+    $('.next22').click(          
+            function() {
+                 $('.example5').hide();
+                Psay1();
+                
+                $('.next22').hide();
+                $('.ok1').delay(8000).fadeIn(2000)
+                
+            },
+            /*
+            function() {
+                $('.dog').stop().animate(
+                {
+                    rotate:'15',
+                },
+                1500,
+                'easeInOutSine'
+                ) 
+            },*/
+        )
+   
+    
+});         
+    
+         
+</script>
+    
+<!--dog eat-->
+<script>
+        dImg = new Array("img/狗不吃.png","img/狗在吃.png");
+        size = dImg.length;
+        i = 0;
+        function dogImg(){
+            picDog.src = dImg[i];
+            i++;
+            if (i>=size) i = 0;
+            setTimeout("dogImg()",500);
+        };
+
+</script>
+
+<!--pig fly-->
+<script>
+
+
+ 
+        
+   
+
+
+</script>
+
+
+<!--dog say-->
+<script>
+    var Dsay = function(){
+         $('.example4').typeIt({
+        /*
+            whatToType: ["This is a great string.", "But here is a better one."],
+            typeSpeed: 100,
+            breakLines: false       */
+        strings: ["yum yum yum", "好吃~好吃~~"],
+        speed: 100,
+        startDelay:4000,
+        cursor:false,
+        autoSmart: false
+        });
+
+    
+    }
+   
+             
+</script>
+    
+<!--pig say-->
+<script>
+    var Psay = function(){
+         $('.example5').typeIt({
+        strings: ["臭狗滾！", "終於是我'豬'的時代了！","哈哈哈！！！"],
+        speed: 100,
+        startDelay:4000,
+        cursor:false,
+        autoSmart: false
+        })
+
+    
+    }
+    
+    var Psay1 = function(){
+         $('.example6').typeIt({
+        strings: ["孩子們！", "我準備了幾道關卡，","Go Go Go！！！"],
+        speed: 100,
+        startDelay:500,
+        autoSmart: false
+        })
+
+    
+    }
+   
+             
+</script>
+      
+<!--dog OUT-->
+<script>
+
+
+             
+</script>
+    
+
+</head>
+    
+<body >
+    <div class="bg">
+        <!--<img class="bg1" src="img/藍天.png" />-->
+        <img class="bg2" src="img/草地.png" />
+    </div>
+    
+    <div id="progressbar">
+        <div class="progress-label">加载...</div>
+    </div>
+    <div class="dog">
+        <img id="picDog" border="0"/>
+    </div>
+    <div>
+    <div class="dogtalk">
+        <img class="dogTalk" src="img/對話框.png"/>
+    </div>
+    
+    <div class="dogSay">       
+        <p class="example4"></p>
+    </div>
+    </div>
+    
+    
+    
+    <div class="pig">
+        <img id="picPig"  src="img/豬飛踢.png"/>
+        <img id="picPig1"  src="img/豬站著.png"/>
+    </div>
+    
+    <div>
+    <div class="pigtalk">
+        <img class="pigTalk" src="img/對話框框.png"/>
+    </div>
+    
+    <div class="pigSay">       
+        <p class="example5"></p>
+    </div>
+    
+    <div class="pigSay1">       
+        <p class="example6"></p>
+    </div>
+           
+    </div>
+    
+ 
+    <div class="next1">
+        <img class="next11" src="img/next.png"/>
+    </div>
+    <div class="next2">
+        <img class="next22" src="img/next.png"/>
+    </div>
+    
+    <div class="ok">
+        <a href="puzzle4.html">
+            <img class="ok1" src="img/ok.png"/>
+        </a>
+    </div>
+</body>
+</html>

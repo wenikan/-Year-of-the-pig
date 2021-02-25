@@ -1,0 +1,120 @@
+/*The whole game*/
+.main
+{
+   /* width:800px;
+	height: 600px; */
+	
+	margin-top:0px;
+	position:relative;
+	
+
+	background-color: transparent;
+	display:block;
+	/*display:block; 
+	border: 2px solid #000; 
+	*/ 
+}
+body
+{
+
+display: block;
+margin: 8px;
+margin-top: 8px;
+margin-right: 8px;
+margin-bottom: 8px;
+margin-left: 8px;
+	}
+
+.source
+{
+	width:200px;
+	height: 550px;
+	
+	display:inline-block;
+	position:absolute;
+	margin-left:30px;
+	margin-top : 30px;
+	background-color: #f5f5f5;
+	
+	/*
+	overflow: hidden;
+	border: 2px solid #000;
+	z-Index:10;
+	border-radius: 10px; */
+}
+
+.resultat
+{
+	width:300px;
+	height: 50px;
+	margin-top: 520px;
+	margin-left:310px;
+	display:block;
+	position:absolute;
+
+	background-color: #f5f5f5;
+	
+	
+/*	border: 2px solid #000;
+overflow: hidden;
+	border-radius: 10px; */
+}
+
+.destination
+{
+	width:200px;
+	height: 550px;
+	margin-top: 20px;
+	margin-left:700px;
+	display:block;
+	position:absolute;
+
+	background-color: #f5f5f5;
+	margin-bottom: 10px;
+	
+	/*
+	border: 2px solid #000;
+	overflow: hidden;
+	border-radius: 10px; */
+}
+
+.hover
+{
+
+border: 2px dashed #000;
+
+}
+
+.result
+{
+
+
+	color:#C00;
+	alignment-adjust:central;	
+	ont-family: times, Times New Roman, times-roman, georgia, serif;
+	margin: 0;
+	padding: 0px 0px 6px 0px;
+	font-size: 30px;
+	/* line-height: 44px;
+	letter-spacing: -2px; */
+	font-weight: bold;	
+	}
+
+
+.text
+{
+    ont-family: times, Times New Roman, times-roman, georgia, serif;
+	color: #444;
+	margin: 0;
+	padding: 0px 0px 6px 0px;
+	font-size: 20px;
+	/* line-height: 44px;
+	letter-spacing: -2px; */
+	font-weight: bold;
+	}
+
+
+
+
+
+

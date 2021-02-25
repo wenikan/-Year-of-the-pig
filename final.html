@@ -1,0 +1,236 @@
+
+<html lang="zh-TW">
+     <title>豬不豬道</title>
+<head>
+     <link rel="shortcut icon" href="img/logo.ico"> 
+
+    <script src="_js/jquery.min.js"></script>
+    <scipt src="_js/jquery-ui.min.js"></scipt>
+    <script src="_js/jQueryRotate.2.2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+
+  <style>
+          html 
+          {
+            height: 100%;
+            background-image: url(img/網站底色.png)
+        }
+      
+        body
+        {
+            font-family: "Microsoft JhengHei";  
+           
+        }
+      .up
+      {
+          top: 25px;
+          left: 580px;
+          width: 371px; 
+          height: 100px; 
+          position: absolute;
+              
+      }
+      .left
+      {
+          /*
+          top: 150px;
+          left: 150px;
+          */
+          top: 150px;
+          left: 250px;
+          width: 100px; 
+          height: 556px; 
+          position: absolute;
+              
+      }
+      .right
+      {
+          /*
+          top: 150px;
+          left: 1280px;
+          */
+          top: 150px;
+          left: 1185px;
+          width: 100px; 
+          height: 556px; 
+          position: absolute;
+              
+      }
+      .close
+      {
+          top: 130px;
+          left: 380px;
+          width: 774px; 
+          height: 600px; 
+          position: absolute;
+           
+      }
+      .little
+      {
+          top: 130px;
+          left: 380px;
+          width: 774px; 
+          height: 600px; 
+          position: absolute;
+              
+      }
+      .open
+      {
+          top: 130px;
+          left: 380px;
+          width: 774px; 
+          height: 600px; 
+          position: absolute;
+              
+      }
+      .pig
+      {
+          top: 200px;
+          left: 700px;
+          width: 128px; 
+          height: 200px; 
+          position: absolute;
+          animation: PigRot  infinite;
+          animation-delay: 2.5s;
+          animation-duration: 2s; 
+          animation-direction：2s;
+          animation: PigRot 1.5s ease 0s infinite alternate;
+      }
+      @keyframes PigRot
+      {
+         0% {
+            transform: rotateZ(15deg);
+          }
+          
+          100%{
+            transform: rotateZ(-15deg);
+          }
+      }
+     
+      /*----------------
+      up. 3.71:1
+      left 0.18:1
+      right 0.18:1
+      close. 1..29:1
+      pig. 0.64:1
+      --------------------*/
+
+      
+      .next
+      {
+            position: absolute;
+            left: 930px;
+            top: 650px;
+      }
+      .next1
+      {
+            position: absolute;
+            width: 150px; 
+            height: 80px; 
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+            font-size: 20px;
+      }
+      .ok
+      {
+            position: absolute;
+            left: 930px;
+            top: 650px;
+      }
+      .ok1
+      {
+            position: absolute;
+            width: 150px; 
+            height: 80px; 
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+            font-size: 20px;
+      }
+      
+    </style>
+    
+<script>
+    var Newyearsong = new Audio("music/newyear.mp3");
+$(document).ready(function(){
+     $('.little').hide();
+     $('.open').hide();
+     $('.pig').hide();   
+     $('.close').css( 'cursor', 'pointer' );
+     $('.close').click(
+         function(){
+                 $('.close').fadeOut(800),
+                 $('.little').fadeIn(800),
+                 $('.little').fadeOut(800),
+                 $('.open').delay(800).fadeIn(800);
+                 $('.pig').fadeIn(2000);
+             Newyearsong.play();
+             $('.pig').animate({
+                      top: '250px',
+                      left: '870px',
+                      width: '128px' ,
+                      height: '200px',
+                 },
+                500,'easeInExpo',),
+                 $('.pig').animate({
+                      top: '350px',
+                      left: '550px',
+                      width: '128px' ,
+                      height: '200px',
+                 },
+                500,'easeInExpo',),
+             
+                 $('.pig').animate({
+                      top: '300px',
+                      left: '650px',
+                      width: '256px' ,
+                      height: '400px',
+                 },
+                1500,'easeInExpo',);
+         }
+     );
+  
+});         
+ 
+    
+</script>
+    
+<!--   1   --->
+ <script>
+
+    
+  </script>
+
+<script>
+  
+ </script>
+
+    
+
+</head>
+    
+<body >
+    <div>
+    <img  class="up" src="img/上聯.png"/>
+    </div>
+    <div>
+    <img  class="left" src="img/左聯.png"/>
+    </div>
+    <div>
+    <img  class="right" src="img/右聯.png"/>
+    </div>
+    <div>
+    <img  class="close" src="img/門沒開.png"/>
+    </div>
+    <div>
+    <img  class="little" src="img/門開一點.png"/>
+    </div>
+    <div>
+    <img  class="open" src="img/門全開.png"/>
+    </div>
+    <div>
+    <img  class="pig" src="img/豬拿春聯.png"/>
+    </div>
+</body>
+</html>
